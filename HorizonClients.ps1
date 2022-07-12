@@ -32,3 +32,5 @@ $localsessioninfo = (get-HVlocalsession).Namesdata | Select-Object UserName, Mac
 # Export the output to a grid and CSV file
 $localsessioninfo | Out-GridView -Title 'VMware Horizon Client versions'
 $localsessioninfo | export-csv $output -Force -NoTypeInformation
+
+Disconnect-HVServer * -Confirm:$false
