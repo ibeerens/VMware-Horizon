@@ -18,7 +18,7 @@
 $connectionserver = 'srv-con-01'
 $domain = 'lab.local'
 $date = Get-date -UFormat "%d-%m-%Y"
-$output = "C:\Temp\horclients-$date.csv"
+$output = "C:\Temp\poolparsnap-$date.csv"
 
 # Import module
 Import-Module VMware.Hv.Helper
